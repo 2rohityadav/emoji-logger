@@ -1,0 +1,207 @@
+{
+  "Console Log Types": {
+    "scope": "javascript,typescript",
+    "prefix": "cl",
+    "body": ["console.log('${1:message}');"],
+    "description": "Basic console.log"
+  },
+  "Console Error": {
+    "scope": "javascript,typescript",
+    "prefix": "ce",
+    "body": ["console.error('❌ ${1:Error message}');"],
+    "description": "Console error with ❌ emoji"
+  },
+  "Console Warning": {
+    "scope": "javascript,typescript",
+    "prefix": "cw",
+    "body": ["console.warn('⚠️ ${1:Warning message}');"],
+    "description": "Console warning with ⚠️ emoji"
+  },
+  "Console Success": {
+    "scope": "javascript,typescript",
+    "prefix": "cs",
+    "body": ["console.log('✅ ${1:Success message}');"],
+    "description": "Console success with ✅ emoji"
+  },
+  "Console Info": {
+    "scope": "javascript,typescript",
+    "prefix": "ci",
+    "body": ["console.log('ℹ️ ${1:Info message}');"],
+    "description": "Console info with ℹ️ emoji"
+  },
+  "Console Debug": {
+    "scope": "javascript,typescript",
+    "prefix": "cd",
+    "body": ["console.log('🐛 ${1:Debug message}');"],
+    "description": "Console debug with 🐛 emoji"
+  },
+  "Console Rocket (Startup)": {
+    "scope": "javascript,typescript",
+    "prefix": "cr",
+    "body": ["console.log('🚀 ${1:Startup message}');"],
+    "description": "Console rocket for startup messages"
+  },
+  "Console Target (App Info)": {
+    "scope": "javascript,typescript",
+    "prefix": "ct",
+    "body": ["console.log('🎯 ${1:App info message}');"],
+    "description": "Console target for app information"
+  },
+  "Console Folder (File Info)": {
+    "scope": "javascript,typescript",
+    "prefix": "cf",
+    "body": ["console.log('📁 ${1:File/folder message}');"],
+    "description": "Console folder for file operations"
+  },
+  "Console Refresh (Proxy/API)": {
+    "scope": "javascript,typescript",
+    "prefix": "cp",
+    "body": ["console.log('🔄 ${1:Proxy/API message}');"],
+    "description": "Console refresh for proxy/API operations"
+  },
+  "Console Floppy (Cache)": {
+    "scope": "javascript,typescript",
+    "prefix": "cc",
+    "body": ["console.log('💾 ${1:Cache message}');"],
+    "description": "Console floppy disk for cache operations"
+  },
+  "Console Compress (Gzip)": {
+    "scope": "javascript,typescript",
+    "prefix": "cz",
+    "body": ["console.log('🗜️ ${1:Compression message}');"],
+    "description": "Console compression for gzip operations"
+  },
+  "Console Lightning (Performance)": {
+    "scope": "javascript,typescript",
+    "prefix": "clight",
+    "body": ["console.log('⚡ ${1:Performance message}');"],
+    "description": "Console lightning for performance operations"
+  },
+  "Console Book (Usage/Docs)": {
+    "scope": "javascript,typescript",
+    "prefix": "cbook",
+    "body": ["console.log('📖 ${1:Usage/Documentation message}');"],
+    "description": "Console book for usage and documentation"
+  },
+  "Console Clipboard (Available Options)": {
+    "scope": "javascript,typescript",
+    "prefix": "cclip",
+    "body": ["console.log('📋 ${1:Available options message}');"],
+    "description": "Console clipboard for available options"
+  },
+  "Console Wrench (Configuration)": {
+    "scope": "javascript,typescript",
+    "prefix": "cwrench",
+    "body": ["console.log('🔧 ${1:Configuration message}');"],
+    "description": "Console wrench for configuration"
+  },
+  "Console House (Host App)": {
+    "scope": "javascript,typescript",
+    "prefix": "chouse",
+    "body": ["console.log('🏠 ${1:Host app message}');"],
+    "description": "Console house for host app information"
+  },
+  "Console Error Box (Multiline)": {
+    "scope": "javascript,typescript",
+    "prefix": "cebox",
+    "body": [
+      "console.error('\\n');",
+      "console.error('╔════════════════════════════════════════════════════════════════╗');",
+      "console.error(`║                 ${1:ERROR TITLE}                        ║`);",
+      "console.error('╚════════════════════════════════════════════════════════════════╝');",
+      "console.error(`\\n❌ ${2:Error message}`);",
+      "console.error(`\\n${3:Error details}\\n`);"
+    ],
+    "description": "Console error box with multiline formatting"
+  },
+  "Console Warning Box (Multiline)": {
+    "scope": "javascript,typescript",
+    "prefix": "cwbox",
+    "body": [
+      "console.warn('\\n');",
+      "console.warn('╔════════════════════════════════════════════════════════════════╗');",
+      "console.warn(`║               ${1:WARNING TITLE}                        ║`);",
+      "console.warn('╚════════════════════════════════════════════════════════════════╝');",
+      "console.warn(`\\n⚠️ ${2:Warning message}`);",
+      "console.warn(`\\n${3:Warning details}\\n`);"
+    ],
+    "description": "Console warning box with multiline formatting"
+  },
+  "Console Warning Log (Styled)": {
+    "scope": "javascript,typescript",
+    "prefix": "cwlog",
+    "body": ["console.warn('\\x1b[1m\\x1b[33m%s\\x1b[0m', `⚠️  WARNING: ${1:Warning message}`);"],
+    "description": "Console warning log with yellow bold styling"
+  },
+  "Console Process Info": {
+    "scope": "javascript,typescript",
+    "prefix": "cproc",
+    "body": [
+      "console.log(`\\n🎯 ${1:App Name} (${2:App ID})`);",
+      "console.log(`🚀 ${3:Process Info} listening on http://localhost:${4:Port}`);"
+    ],
+    "description": "Console process information with app details"
+  },
+  "Console Server Status": {
+    "scope": "javascript,typescript",
+    "prefix": "cserv",
+    "body": [
+      "console.log(`📁 Serving static files from ${1:Static Directory}`);",
+      "console.log(`🔄 Proxying API calls to http://localhost:${2:Mock Server Port}`);",
+      "console.log(`💾 File cache enabled (${3:Cache Size} files max)`);",
+      "console.log(`🗜️  Gzip compression enabled`);"
+    ],
+    "description": "Console server status information"
+  },
+  "Console Instructions": {
+    "scope": "javascript,typescript",
+    "prefix": "cinstr",
+    "body": [
+      "console.log(`\\n⚠️  Make sure the mock server is running on port ${1:Port}`);",
+      "console.log(`   Run: cd ${2:Directory} && ${3:Command}`);"
+    ],
+    "description": "Console instructions for setup"
+  },
+  "Console Error with Usage": {
+    "scope": "javascript,typescript",
+    "prefix": "ceusage",
+    "body": [
+      "console.error('❌ Error: ${1:Error message}');",
+      "console.log('📖 Usage: ${2:Usage command}');",
+      "console.log('📋 Available options: ${3:Available options}');",
+      "console.log('🔧 Example: ${4:Example command}');"
+    ],
+    "description": "Console error with usage information"
+  },
+  "Console Error with Options": {
+    "scope": "javascript,typescript",
+    "prefix": "ceopt",
+    "body": [
+      "console.error(`❌ Error: ${1:Error message}`);",
+      "console.log('📋 Available options: ${2:Available options}');",
+      "console.log('🏠 Host app: ${3:Host app name}');",
+      "console.log('🔧 Micro-frontends: ${4:Micro frontends list}');"
+    ],
+    "description": "Console error with available options"
+  },
+  "Console Worker Status": {
+    "scope": "javascript,typescript",
+    "prefix": "cwork",
+    "body": [
+      "console.log(`🚀 Master process ${1:Process ID} starting ${2:Worker Count} workers for ${3:App Name}...`);"
+    ],
+    "description": "Console worker status for clustering"
+  },
+  "Console Worker Death": {
+    "scope": "javascript,typescript",
+    "prefix": "cdeath",
+    "body": ["console.log(`Worker ${1:Worker ID} died. Restarting...`);"],
+    "description": "Console worker death and restart"
+  },
+  "Console Shutdown": {
+    "scope": "javascript,typescript",
+    "prefix": "cshut",
+    "body": ["console.log('${1:Process type} received SIGTERM, shutting down gracefully...');"],
+    "description": "Console shutdown message"
+  }
+}

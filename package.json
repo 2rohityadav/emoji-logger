@@ -1,0 +1,99 @@
+{
+  "name": "emoji-logger",
+  "displayName": "Emoji Logger",
+  "description": "Enhanced console logging with emojis and structured output for JavaScript/TypeScript development",
+  "version": "1.0.0",
+  "publisher": "rohit2",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "keywords": [
+    "console",
+    "log",
+    "emoji",
+    "javascript",
+    "typescript",
+    "debugging",
+    "server",
+    "snippets"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/javascript.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "emoji-logger.showHelp",
+        "title": "Show Emoji Logger Help",
+        "category": "Emoji Logger"
+      }
+    ],
+    "configuration": {
+      "title": "Emoji Logger",
+      "properties": {
+        "emoji-logger.enableAutoCompletion": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable auto-completion for emoji logger snippets"
+        },
+        "emoji-logger.showWelcomeMessage": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show welcome message when extension is first activated"
+        }
+      }
+    },
+    "keybindings": [
+      {
+        "command": "emoji-logger.showHelp",
+        "key": "ctrl+shift+e",
+        "mac": "cmd+shift+e",
+        "when": "editorTextFocus"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "16.x",
+    "@types/vscode": "^1.74.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/2rohityadav/emoji-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/2rohityadav/emoji-logger/issues"
+  },
+  "homepage": "https://github.com/2rohityadav/emoji-logger#readme",
+  "icon": "icon.png"
+}
